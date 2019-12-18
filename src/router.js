@@ -48,6 +48,11 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "simple" */ './views/Simple.vue')
     },
+    {
+      path: '/stagger',
+      name: 'stagger',
+      component: () =>
+        import(/* webpackChunkName: "stagger" */ './views/Stagger.vue')
     }
   ]
 })
