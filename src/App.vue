@@ -93,4 +93,8 @@ button {
 .slide-up-enter-active {
   transition: all 0.5s ease-out;
 }
+
+.slide-up-move {
+  transition: transform 0.8s ease-in;
+}
 </style>
