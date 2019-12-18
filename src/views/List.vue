@@ -3,11 +3,11 @@
     <input type="text" v-model="newContact" placeholder="Name" />
     <button @click="addContact">Add Contact</button>
 
-    <ul>
+    <transition-group tag="ul" name="slide-up" appear>
       <li v-for="contact in contacts" :key="contact">
         {{ contact }}
       </li>
-    </ul>
+    </transition-group>
   </div>
 </template>
 
