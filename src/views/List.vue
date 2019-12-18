@@ -1,9 +1,10 @@
 <template>
   <div>
-    <input v-model="newContact" placeholder="Name" type="text" />
+    <input type="text" v-model="newContact" placeholder="Name" />
     <button @click="addContact">Add Contact</button>
+
     <ul>
-      <li v-for="(contact, index) in contacts" :key="index">
+      <li v-for="contact in contacts" :key="contact">
         {{ contact }}
       </li>
     </ul>
@@ -15,7 +16,7 @@ export default {
   data() {
     return {
       newContact: '',
-      contacts: ['Beau Thabeast', 'Cindy Rella', 'Alice Wunderlind']
+      contacts: ['Beau Thabeast', 'Cindy Rella', 'Alice Vunderlind']
     }
   },
   methods: {
